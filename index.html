@@ -662,7 +662,7 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <button type="submit" class="main-button"><a class = 'mailto'>Send Message</a></button>
+                                    <button type="submit" class="main-button"><a id='mailto' class='mailto'>Send Message</a></button>
                                 </div>
 
                             </div>                             
@@ -736,5 +736,24 @@
     <script src="assets/vendor/app.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
+    <script>
+    $('#mailto').click(function() {
+        // this.href = "mailto:you@yourdomain.com?subject=Data&body=";
+        this.href = "mailto:muhye.alraie@gmail.com?subject=";
+        this.href += getSubject();
+        this.href +="&body=";
+        this.href += getBody();
+
+    });
+    function getBody() {
+        Body = $("#form_message").val();
+        return  Body;
+    }
+
+    function getSubject() {
+        subject = $("#form_subject").val();
+        return  subject;
+    }
+    </script>
 </body>
 </html>
