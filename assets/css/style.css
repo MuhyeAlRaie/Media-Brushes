@@ -2058,3 +2058,7 @@ ul li {
     left: -1px;
     bottom: -1px;
 }
+
+.mailto {
+    color: white;
+}
