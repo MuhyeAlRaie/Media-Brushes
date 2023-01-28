@@ -1892,7 +1892,6 @@ ul li {
 
 .service-details__img img {
     width: 100%;
-    mix-blend-mode: luminosity;
 }
 
 .service-details__content {
