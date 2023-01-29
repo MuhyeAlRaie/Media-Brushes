@@ -376,5 +376,24 @@
     <script src="assets/vendor/app.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/custom.js"></script>
+    <script>
+        $('#mailto').click(function() {
+            // this.href = "mailto:you@yourdomain.com?subject=Data&body=";
+            this.href = "mailto:info@mediabrushes.com?subject=";
+            this.href += getSubject();
+            this.href +="&body=";
+            this.href += getBody();
+    
+        });
+        function getBody() {
+            Body = $("#form_message").val();
+            return  Body;
+        }
+    
+        function getSubject() {
+            subject = $("#form_subject").val();
+            return  subject;
+        }
+        </script>
 </body>
 </html>
