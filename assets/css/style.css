@@ -2016,6 +2016,7 @@ ul li {
 .service-details__benefits-list li .icon {
     display: flex;
     align-items: center;
+    color: #790002;
 }
 
 .service-details__benefits-list li .icon span {
@@ -2061,3 +2062,4 @@ ul li {
 .mailto {
     color: white;
 }
+
